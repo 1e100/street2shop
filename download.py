@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from tomorrow import threads
 import imghdr
 import requests
@@ -41,11 +43,11 @@ def main(args):
         except KeyboardException:
             raise
         except:
-            print "Unexpected error:", sys.exc_info()[0]
+            print("Unexpected error:", sys.exc_info()[0])
             logging.error(sys.exc_info()[0])
 
         if i % 200 == 0:
-            print i
+            print(i)
 
 
 
