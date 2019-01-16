@@ -1,4 +1,8 @@
-curl http://tlberg.cs.unc.edu/wheretobuyit_release/photos.tar | tar x
-curl -O http://tlberg.cs.unc.edu/wheretobuyit_release/meta.zip
+#!/usr/bin/env bash
+
+set -e 
+
+curl http://www.tamaraberg.com/street2shop/wheretobuyit/photos.tar | tar x
+curl -O http://www.tamaraberg.com/street2shop/wheretobuyit/meta.zip
 unzip meta.zip
 rm meta.zip
